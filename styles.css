@@ -30,44 +30,16 @@
 body {
 	font-family: "KumbhSans", sans-serif;
 	background-color: var(--color-blue-600);
-	min-height: 100vh;
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: right 50vw bottom 40vh, left 50vw top 40vh;
 	min-height: 100dvh;
-	height: 100vh;
-	height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
-	position: relative;
 }
 
-body::before,
-body::after {
-	content: "";
-	position: absolute;
-	background-repeat: no-repeat;
-	pointer-events: none;
-	z-index: 0;
-}
-
-body::before {
-	top: -35%;
-	left: -100%;
-	width: 150%;
-	aspect-ratio: 1;
-	background-image: url(images/bg-pattern-top.svg);
-	background-size: cover;
-}
-
-body::after {
-	bottom: -35%;
-	right: -100%;
-	width: 150%;
-	aspect-ratio: 1;
-	background-image: url(images/bg-pattern-bottom.svg);
-	background-size: cover;
-}
 
 /* Card */
 
@@ -201,16 +173,5 @@ body::after {
 	color: var(--color-gray-100);
 }
 
-@media (min-width: 1440px) {
-	body::before {
-		top: -70%;
-		left: -13%;
-		width: 60%;
-	}
+/* No extra overrides needed for backgrounds using vw/vh units */
 
-	body::after {
-		bottom: -85%;
-		right: -10%;
-		width: 60%;
-	}
-}
