@@ -29,17 +29,20 @@
 
 body {
 	font-family: "KumbhSans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--color-blue-600);
 	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
 	background-repeat: no-repeat;
-	background-position: right 50vw bottom 40vh, left 50vw top 40vh;
+	background-position:
+		right 50vw bottom 40vh,
+		left 50vw top 40vh;
 	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
 
 /* Card */
 
@@ -129,6 +132,7 @@ body {
 /* Card stats */
 
 .card__stats {
+	list-style: none;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 2.8rem 1.5rem;
@@ -154,8 +158,6 @@ body {
 	letter-spacing: 0.15em;
 }
 
-/* Attribution */
-
 .attribution {
 	position: relative;
 	z-index: 1;
@@ -166,6 +168,9 @@ body {
 
 	& a {
 		color: var(--color-navy-950);
+		text-decoration: none;
+		font-weight: 700;
+		transition: color 0.3s ease;
 	}
 }
 
@@ -173,5 +178,7 @@ body {
 	color: var(--color-gray-100);
 }
 
-/* No extra overrides needed for backgrounds using vw/vh units */
-
+.attribution a:focus-visible {
+	outline: 2px dashed var(--color-navy-950);
+	outline-offset: 4px;
+}

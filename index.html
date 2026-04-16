@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Profile card component for Victor Crest" />
 
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Profile card component | Victor Crest" />
+		<meta property="og:description" content="A clean profile card component for Victor Crest created for Frontend Mentor." />
+		<meta property="og:image" content="./images/desktop-preview.png" />
+
 		<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32" />
 		<link rel="preload" href="fonts/KumbhSans-VariableFont_YOPQ,wght.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 		<link rel="stylesheet" href="styles.css" />
@@ -34,20 +40,20 @@
 			<hr class="card__divider" />
 
 			<!-- Statistics section -->
-			<section class="card__stats" aria-label="User statistics">
-				<div class="card__stat">
+			<ul class="card__stats" aria-label="User statistics">
+				<li class="card__stat">
 					<strong class="card__stat-value">80K</strong>
 					<span class="card__stat-label">Followers</span>
-				</div>
-				<div class="card__stat">
+				</li>
+				<li class="card__stat">
 					<strong class="card__stat-value">803K</strong>
 					<span class="card__stat-label">Likes</span>
-				</div>
-				<div class="card__stat">
+				</li>
+				<li class="card__stat">
 					<strong class="card__stat-value">1.4K</strong>
 					<span class="card__stat-label">Photos</span>
-				</div>
-			</section>
+				</li>
+			</ul>
 		</main>
 
 		<!-- Attribution -->
