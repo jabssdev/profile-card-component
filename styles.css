@@ -168,7 +168,6 @@ body {
 
 	& a {
 		color: var(--color-navy-950);
-		text-decoration: none;
 		font-weight: 700;
 		transition: color 0.3s ease;
 	}
